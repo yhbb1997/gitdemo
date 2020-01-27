@@ -1,0 +1,118 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 5 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+logc 		 0.819013
+logK 		 3.13387
+logY 		 1.04462
+logI 		 -0.555011
+logz 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.9369           0.9369                0
+           0.979            0.979                0
+           1.085            1.085                0
+       1.441e+16       -1.441e+16                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         5
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  2
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         eps
+eps          0.000052
+
+POLICY AND TRANSITION FUNCTIONS
+                                logc            logK            logY            logI            logz
+Constant                    0.819018        3.133868        1.044623       -0.555031               0
+(correction)                0.000005               0               0       -0.000020               0
+logK(-1)                    0.803555        0.936885        0.333333       -1.524616               0
+logz(-1)                    0.246968        0.096785        0.979000        3.871418        0.979000
+eps                         0.252266        0.098862        1.000000        3.954461        1.000000
+logK(-1),logK(-1)           0.024417        0.021197               0       -2.259289               0
+logz(-1),logK(-1)          -0.071736       -0.062800               0        7.017486               0
+logz(-1),logz(-1)           0.052116        0.046474               0       -5.447632               0
+eps,eps                     0.054376        0.048489               0       -5.683847               0
+logK(-1),eps               -0.073275       -0.064147               0        7.168014               0
+logz(-1),eps                0.106468        0.094942               0      -11.128973               0
+
+
+MOMENTS OF SIMULATED VARIABLES (HP filter, lambda = 1600)
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+logc              0.804243        0.003552        0.000013        0.067202       -0.126971
+logK              3.118585        0.003123        0.000010        0.062289       -0.028722
+logY              1.029554        0.009377        0.000088        0.044650       -0.157316
+logI             -0.573040        0.036664        0.001344       -0.084938       -0.074535
+logz             -0.009977        0.009235        0.000085        0.035405       -0.126575
+
+
+CORRELATION OF SIMULATED VARIABLES (HP filter, lambda = 1600)
+VARIABLE      logc    logK    logY    logI    logz
+logc        1.0000  0.9144  0.7859  0.6165  0.7130
+logK        0.9144  1.0000  0.4683  0.2457  0.3681
+logY        0.7859  0.4683  1.0000  0.9704  0.9939
+logI        0.6165  0.2457  0.9704  1.0000  0.9905
+logz        0.7130  0.3681  0.9939  0.9905  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES (HP filter, lambda = 1600)
+VARIABLE         1       2       3       4       5
+logc        0.8861  0.7338  0.5604  0.3906  0.2343
+logK        0.9535  0.8429  0.6915  0.5213  0.3484
+logY        0.7331  0.4857  0.2620  0.0925 -0.0265
+logI        0.7101  0.4481  0.2161  0.0492 -0.0617
+logz        0.7180  0.4613  0.2326  0.0631 -0.0524
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('hgconvertunits')" style="font-weight:bold">hgconvertunits</a>
+第一个输入参数必须为图窗句柄。
+
+出错 alternatePrintPath
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', '/Applications/MATLAB_R2019b.app/toolbox/matlab/graphics/printing/print.m', 83)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2019b.app/toolbox/matlab/graphics/printing/print.m',83,0)">line 83</a>)
+pj = alternatePrintPath(pj);
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dyn_saveas', '/Applications/Dynare/4.5.7/matlab/dyn_saveas.m', 42)" style="font-weight:bold">dyn_saveas</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/dyn_saveas.m',42,0)">line 42</a>)
+    print(h,'-depsc2',[fname,'.eps'])
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stoch_simul', '/Applications/Dynare/4.5.7/matlab/stoch_simul.m', 278)" style="font-weight:bold">stoch_simul</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/stoch_simul.m',278,0)">line 278</a>)
+                    dyn_saveas(hh,[M_.fname '_IRF_'
+                    deblank(tit(i,:))],options_.nodisplay,options_.graph_format);
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lecture_sdngm', '/Users/yhbb1997/Desktop/19-20第一学期/19-20宏观一/dynare/lecture_sdngm.m', 144)" style="font-weight:bold">lecture_sdngm</a> (<a href="matlab: opentoline('/Users/yhbb1997/Desktop/19-20第一学期/19-20宏观一/dynare/lecture_sdngm.m',144,0)">line 144</a>)
+info = stoch_simul(var_list_);
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', '/Applications/Dynare/4.5.7/matlab/dynare.m', 235)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('/Applications/Dynare/4.5.7/matlab/dynare.m',235,0)">line 235</a>)
+evalin('base',fname) ;
+
+出错 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('lecture_main', '/Users/yhbb1997/Desktop/19-20第一学期/19-20宏观一/dynare/lecture_main.m', 16)" style="font-weight:bold">lecture_main</a> (<a href="matlab: opentoline('/Users/yhbb1997/Desktop/19-20第一学期/19-20宏观一/dynare/lecture_main.m',16,0)">line 16</a>)
+dynare lecture_sdngm.mod noclearall;
+} 
+clear
+edit sdngm.mod
+cd /Users/yhbb1997/Desktop/19-20第一学期/19-20宏观一/PS3
+edit sdngm.mod
+edit sdngml.mod
